@@ -15,9 +15,9 @@
     </ul>
 
     <div class="lang-switch">
-      <select onchange="location = this.value;">
-        <option value="{{ '/' | relative_url }}">ID</option>
-        <option value="{{ '/en/' | relative_url }}">EN</option>
+      <select id="lang-switch">
+        <option value="id" {% unless page.lang == "en" %}selected{% endunless %}>Indonesia</option>
+        <option value="en" {% if page.lang == "en" %}selected{% endif %}>English</option>
       </select>
     </div>
   </div>
