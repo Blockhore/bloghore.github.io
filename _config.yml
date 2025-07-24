@@ -13,7 +13,10 @@ permalink: /:categories/:title/
 
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: "en"
     values:
-      layout: "post"
+      lang: en
+  - scope:
+      path: ""
+    values:
+      lang: id
