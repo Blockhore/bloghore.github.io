@@ -448,3 +448,124 @@
     flex: 1;
   }
 }
+
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+
+  .post-header {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .post-meta {
+      font-size: 0.9rem;
+      color: #777;
+
+      a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .post-banner {
+      width: 100%;
+      margin-top: 1.5rem;
+      border-radius: 6px;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  }
+
+  .post-body {
+    line-height: 1.75;
+    font-size: 1.05rem;
+    color: #333;
+
+    h2, h3, h4 {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: $color-primary;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background-color: #f9f9f9;
+      border-left: 4px solid $color-primary;
+      font-style: italic;
+      color: #555;
+    }
+
+    code {
+      background: #f1f1f1;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    pre {
+      background: #f3f3f3;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+    }
+
+    a {
+      color: $color-secondary;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .post-footer {
+    margin-top: 2rem;
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      a {
+        background-color: #eee;
+        padding: 0.4rem 0.75rem;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: #444;
+
+        &:hover {
+          background-color: $color-primary;
+          color: white;
+        }
+      }
+    }
+  }
+}
