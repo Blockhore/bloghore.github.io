@@ -434,3 +434,17 @@
     }
   }
 }
+
+.post-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .post-content {
+    flex: 1;
+  }
+}
