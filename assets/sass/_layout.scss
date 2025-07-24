@@ -616,3 +616,40 @@
     }
   }
 }
+
+.tag-page {
+  margin-top: 2rem;
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid $color-secondary;
+    padding-left: 0.75rem;
+  }
+
+  .tag-post-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-secondary;
+        }
+      }
+
+      .post-date {
+        font-size: 0.85rem;
+        color: #888;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
