@@ -1,0 +1,43 @@
+---
+layout: default
+title: Arsip
+---
+
+<section class="archive-page container">
+  <h1>Arsip Artikel</h1>
+  {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  <ul class="archive-list">
+    {% for year in posts_by_year %}
+      <li>
+        <strong>{{ year.name }}</strong>
+        <ul>
+          {% assign posts_by_month = year.items | group_by_exp:"post", "post.date | date: '%m'" %}
+          {% for month in posts_by_month %}
+            <li>
+              <a href="{{ '/pages/archive.html' | relative_url }}?year={{ year.name }}&month={{ month.name }}">
+                {{ month.name | date: "%B" }} ({{ month.items.size }})
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if page.url contains 'year=' and page.url contains 'month=' %}
+    <h2>Artikel bulan {{ page.url | split: 'month=' | last | uri_unescape }}, {{ page.url | split: 'year=' | last | split: '&' | first }}</h2>
+    <ul>
+      {% assign selected_year = page.url | split: 'year=' | last | split: '&' | first %}
+      {% assign selected_month = page.url | split: 'month=' | last %}
+      {% for post in site.posts %}
+        {% assign post_year = post.date | date: "%Y" %}
+        {% assign post_month = post.date | date: "%m" %}
+        {% if post_year == selected_year and post_month == selected_month %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</section>
