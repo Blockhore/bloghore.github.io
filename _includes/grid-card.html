@@ -2,7 +2,7 @@
   <a href="{{ post.url | relative_url }}" class="grid-card-link">
     {% if post.image %}
       <div class="grid-thumb">
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
       </div>
     {% endif %}
     <div class="grid-content">
@@ -10,13 +10,17 @@
         <span class="grid-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <span class="grid-category">
           {% if post.categories.size > 0 %}
-            {{ post.categories[0] }}
+            <a href="/category/{{ post.categories[0] | slugify }}">
+              {{ post.categories[0] }}
+            </a>
           {% endif %}
         </span>
       </div>
       <h2 class="grid-title">{{ post.title }}</h2>
       {% if post.description %}
         <p class="grid-desc">{{ post.description | truncate: 100 }}</p>
+      {% else %}
+        <p class="grid-desc">{{ post.excerpt | strip_html | truncate: 100 }}</p>
       {% endif %}
       <div class="grid-author">By {{ post.author }}</div>
     </div>
