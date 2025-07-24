@@ -1,0 +1,26 @@
+body.dark {
+  background-color: #111;
+  color: #eee;
+
+  a {
+    color: $color-secondary;
+  }
+
+  .navbar, .footer, .post-sidebar, .post-banner, .grid-card {
+    background-color: #1a1a1a;
+    color: #ccc;
+    border-color: #333;
+  }
+
+  .grid-card a:hover {
+    color: lighten($color-secondary, 20%);
+  }
+
+  .hero-section {
+    background: #1c1c1c;
+  }
+
+  .post-content h1, .post-content h2 {
+    color: #fafafa;
+  }
+}
