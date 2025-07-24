@@ -3,6 +3,7 @@ layout: default
 ---
 
 <section class="hero-section">
+  {% include hero.html %}
   <h1>Artikel Populer</h1>
   <article class="hero-article">
     {% assign popular = site.posts | sort: 'views' | reverse %}
