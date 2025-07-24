@@ -32,7 +32,11 @@ layout: default
     {{ content }}
   </section>
 
-  <aside class="post-sidebar">
-    {% include sidebar.html %}
-  </aside>
+<div class="container post-layout">
+  <main class="post-content">
+    ...konten artikel...
+  </main>
+
+  {% include sidebar.html %}
+</div>
 </article>
