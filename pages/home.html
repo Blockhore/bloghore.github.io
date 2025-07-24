@@ -28,3 +28,27 @@
     {% endfor %}
   </div>
 </section>
+
+<section class="post-grid container">
+  <h2 class="section-title">Artikel Terbaru</h2>
+
+  <div class="grid-list">
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
+      <article class="grid-card">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+          <div class="card-body">
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+            <div class="meta">
+              <span class="date">{{ post.date | date: "%d %B %Y" }}</span> •
+              <span class="author">{{ post.author }}</span> •
+              <span class="category">{{ post.categories[0] }}</span>
+            </div>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
