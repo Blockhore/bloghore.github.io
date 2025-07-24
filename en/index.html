@@ -1,0 +1,18 @@
+---
+layout: default
+title: Home
+lang: en
+permalink: /en/
+---
+
+<section class="hero-section">
+  <h1>Top Articles</h1>
+  <!-- Hero post + 5 populer post -->
+</section>
+
+<section class="grid-list">
+  {% assign posts = site.posts | where:"lang","en" | sort:"date" | reverse %}
+  {% for post in posts %}
+    {% include grid-card.html post=post %}
+  {% endfor %}
+</section>
