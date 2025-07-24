@@ -3,7 +3,7 @@ layout: default
 ---
 
 <section class="category-detail container">
-  <h1>Kategori: {{ page.title | replace: '-', | capitalize }}</h1>
+  <h1>Kategori: {{ page.title | replace: '-', ' ' | capitalize }}</h1>
 
   <ul class="posts-list">
     {% assign cat = page.title | downcase %}
