@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  background-color: white;
+  color: #222;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
