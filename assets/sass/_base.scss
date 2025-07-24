@@ -1,0 +1,29 @@
+// assets/sass/_base.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-light-bg;
+  color: $color-light-text;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-light-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0 0.5em 0;
+  font-weight: 600;
+}
