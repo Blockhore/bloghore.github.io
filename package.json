@@ -4,6 +4,7 @@
   "description": "Static blog site for Bloghore",
   "scripts": {
     "dev": "gulp",
+    "build": "gulp build",
     "build": "gulp styles"
   },
   "devDependencies": {
