@@ -1,7 +1,7 @@
 title: Bloghore
 description: Blog seputar blockchain, crypto, web3, tech, dan ekonomi
 baseurl: "" # Kosongkan jika di root domain
-url: "https://bloghore.github.io" # Ganti sesuai domain kamu
+url: "https://bloghore.netlify.app" # Ganti sesuai domain kamu
 
 markdown: kramdown
 theme: minima
