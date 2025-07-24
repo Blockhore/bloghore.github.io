@@ -1,0 +1,41 @@
+<aside class="sidebar">
+
+  <!-- Artikel Terkait -->
+  <section class="related-articles">
+    <h2>Artikel Terkait</h2>
+    <ul>
+      {% assign related_posts = site.posts | where_exp:"post", "post.tags | intersect: page.tags" | where_exp:"post", "post.url != page.url" | sort: "date" | reverse %}
+      {% for post in related_posts limit:5 %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Tag Artikel -->
+  <section class="post-tags">
+    <h2>Tag</h2>
+    <ul class="tags-list">
+      {% for tag in page.tags %}
+        <li><a href="{{ '/pages/category.html' | relative_url }}?tag={{ tag | uri_escape }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Share Buttons -->
+  <section class="share-buttons">
+    <h2>Share</h2>
+    <ul>
+      <li><a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url }}&title={{ page.title | url_encode }}" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <!-- Join Komunitas -->
+  <section class="join-community">
+    <h2>Join Komunitas</h2>
+    <a href="https://t.me/yourtelegramgroup" class="btn-join" target="_blank" rel="noopener noreferrer">Gabung Telegram</a>
+    <a href="https://discord.gg/yourdiscord" class="btn-join" target="_blank" rel="noopener noreferrer">Gabung Discord</a>
+  </section>
+
+</aside>
