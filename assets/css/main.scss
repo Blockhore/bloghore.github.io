@@ -1,15 +1,15 @@
 ---
 ---
-// === COPY PASTE IN THE SASS/MAIN.SCSS
-@import 'variables';
-@import 'mixins';
-@import 'base';
-@import 'layout';
-@import 'components';
-@import 'themes';
-@import 'dark';
-@import 'footer';
-@import 'navbar';
-@import 'reset';
-@import 'responsive';
-@import 'typography';
+// === IMPORT AT THE /SASS/ FOLDER
+@import "../sass/variables";
+@import "../sass/mixins";
+@import "../sass/base";
+@import "../sass/layout";
+@import "../sass/components";
+@import "../sass/themes";
+@import "../sass/dark";
+@import "../sass/footer";
+@import "../sass/navbar";
+@import "../sass/reset";
+@import "../sass/responsive";
+@import "../sass/typography";
