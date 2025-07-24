@@ -14,6 +14,16 @@
   <!-- SEO & Feed -->
   {% seo %}
   {% feed_meta %}
+
+  <!-- SEO: Multilingual alternate -->
+  {% assign base_url = site.url | append: site.baseurl %}
+  {% assign this_url = page.url | relative_url %}
+  {% assign id_url = base_url | append: this_url | replace_first: '/en', '' %}
+  {% assign en_url = base_url | append: '/en' | append: this_url | replace_first: '/en', '' %}
+  
+  <link rel="alternate" hreflang="id" href="{{ id_url }}" />
+  <link rel="alternate" hreflang="en" href="{{ en_url }}" />
+
 </head>
 
 <body class="light-mode">
