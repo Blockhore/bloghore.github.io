@@ -6,7 +6,7 @@ author: Rafi Aliffari
 categories: kelas-dasar
 tags: blockchain, teknologi, web3
 lang: id
-image: https://via.placeholder.com/800x400?text=Bloghore
+image: https://res.cloudinary.com/deq13ln4r/image/upload/v1752458549/1_ddgz1n.png
 description: Penjelasan mudah tentang teknologi blockchain dan kenapa penting di masa depan.
 ---
 
