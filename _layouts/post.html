@@ -12,6 +12,18 @@ layout: default
     </p>
   </header>
 
+  <span id="view-count">0 views</span>
+
+  <script>
+    const key = "{{ page.url }}";
+  
+    fetch(`https://api.countapi.xyz/hit/bloghore/${key}`)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('view-count').textContent = `${data.value} views`;
+      });
+  </script>
+
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="post-image" />
   {% endif %}
