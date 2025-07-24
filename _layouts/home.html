@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<section class="hero-section">
+  <h1>Artikel Populer</h1>
+  <article class="hero-article">
+    {% assign popular = site.posts | sort: 'views' | reverse %}
+    {% assign top1 = popular.first %}
+    <a href="{{ top1.url | relative_url }}">
+      <h2>{{ top1.title }}</h2>
+      {% if top1.image %}
+        <img src="{{ top1.image | relative_url }}" alt="{{ top1.title }}">
+      {% endif %}
+      <p>{{ top1.excerpt | strip_html | truncate: 150 }}</p>
+    </a>
+  </article>
+
+  <div class="popular-list">
+    {% for post in popular offset:1 limit:5 %}
+      <article>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="latest-articles">
+  <h2>Artikel Terbaru</h2>
+  <div class="grid-articles">
+    {% assign latest = site.posts | sort: 'date' | reverse %}
+    {% for post in latest limit:12 %}
+      <article class="grid-item">
+        <a href="{{ post.url | relative_url }}">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          {% endif %}
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+          <p>by {{ post.author }}</p>
+          <p class="category">{{ post.categories | join: ', ' }}</p>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
