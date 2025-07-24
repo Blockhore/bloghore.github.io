@@ -2,8 +2,9 @@
 const toggleDark = document.getElementById("toggle-dark");
 
 if (toggleDark) {
-  // Check saved preference
-  if (localStorage.getItem("theme") === "dark") {
+  // Check localStorage on load
+  if (localStorage.getItem("theme") === "dark" || 
+     (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
     document.body.classList.add("dark");
     toggleDark.checked = true;
   }
