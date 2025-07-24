@@ -1,0 +1,30 @@
+<section class="hero-section container">
+  {% assign popular_posts = site.posts | sort: 'views' | reverse %}
+  {% assign main_post = popular_posts[0] %}
+  {% assign other_posts = popular_posts | slice: 1, 5 %}
+
+  <div class="hero-main">
+    <a href="{{ main_post.url | relative_url }}">
+      <img src="{{ main_post.image | relative_url }}" alt="{{ main_post.title }}">
+      <div class="hero-info">
+        <h2>{{ main_post.title }}</h2>
+        <p>{{ main_post.excerpt | strip_html | truncate: 120 }}</p>
+        <span class="post-meta">{{ main_post.date | date: "%d %B %Y" }}</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="hero-list">
+    {% for post in other_posts %}
+      <div class="hero-item">
+        <a href="{{ post.url | relative_url }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+          <div class="hero-item-info">
+            <h3>{{ post.title }}</h3>
+            <span class="post-meta">{{ post.date | date: "%d %B %Y" }}</span>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
