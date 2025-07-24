@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<section class="tag-page container">
+  <h1 class="section-title">Tag: {{ page.title }}</h1>
+
+  <ul class="tag-post-list">
+    {% assign tagname = page.title %}
+    {% assign tagged_posts = site.tags[tagname] %}
+    {% for post in tagged_posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%d %B %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
