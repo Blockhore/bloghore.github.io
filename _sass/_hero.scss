@@ -14,15 +14,6 @@
   border-radius: 10px;
   overflow: hidden;
 
-  h1 {
-    font-size: 1,9rem;
-    font-weight: 600;
-    color: $color-primary;
-    margin-bottom: 0.75rem;
-    padding-left: 0.25rem;
-    border-left: 4px solid $color-primary;
-  }
-
   a {
     display: block;
     position: relative;
@@ -60,6 +51,15 @@
       .post-meta {
         font-size: 0.85rem;
         color: #ccc;
+      }
+      
+      h1 {
+        font-size: 1,9rem;
+        font-weight: 600;
+        color: $color-primary;
+        margin-bottom: 0.75rem;
+        padding-left: 0.25rem;
+        border-left: 4px solid $color-primary;
       }
     }
   }
