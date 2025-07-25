@@ -1,9 +1,11 @@
 .category-detail {
   padding-block: 2rem;
+  color: #eee;
 
   h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    color: #ffd700;
   }
 
   .category-description {
@@ -15,6 +17,7 @@
   .category-count {
     margin-bottom: 1rem;
     font-weight: bold;
+    color: #ccc;
   }
 
   .post-list {
@@ -22,9 +25,13 @@
     padding: 0;
 
     li {
-      margin-bottom: 0.75rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #333;
 
       a {
+        font-size: 1.2rem;
+        font-weight: bold;
         color: #00aaff;
         text-decoration: none;
 
@@ -34,8 +41,23 @@
       }
 
       small {
-        color: #aaa;
+        color: #999;
         margin-left: 0.5rem;
+      }
+
+      .excerpt {
+        margin-top: 0.5rem;
+        color: #ccc;
+        line-height: 1.4;
+      }
+
+      .post-thumbnail {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
       }
     }
   }
