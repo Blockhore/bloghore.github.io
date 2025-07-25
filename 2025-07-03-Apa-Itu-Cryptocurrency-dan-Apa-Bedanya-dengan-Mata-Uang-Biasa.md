@@ -1,17 +1,14 @@
 ---
-date: 2025-07-03
 layout: post
-title: Apa Itu Cryptocurrency dan Apa Bedanya Dengan Mata Uang Biasa?
-subtitle: 
-description: Apa itu cryptocurrency? Bagaimana perbedaannya dengan mata uang seperti Rupiah atau Dolar? Dalam artikel ini, kamu akan menemukan penjelasan lengkap dan mudah dipahami tentang pengertian cryptocurrency dan perbandingannya dengan uang fiat yang biasa kita gunakan sehari-hari. Cocok untuk pemula yang ingin memahami dasar-dasar dunia aset digital dan teknologi blockchain.
+title: Apa itu Cryptocurrency dan Apa Bedanya dengan Mata Uang Biasa?
+date: 2025-06-29
+author: Rafi Aliffari
+categories: kelas-dasar
+tags: Cryptocurrency
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1751506042/1_lpaj9n.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1751506042/1_lpaj9n.png
-category: kelas-dasar
-tags:
-  - Cryptocurrency
-author: rafialiffari
-paginate: true
----  
+description: Apa itu cryptocurrency? Bagaimana perbedaannya dengan mata uang seperti Rupiah atau Dolar? Baca artikel ini.
+---
 Perkembangan teknologi digital saat ini begitu pesat. Istilah *cryptocurrency* atau mata uang kripto semakin sering didengar oleh masyarakat. Mulai dari media sosial hingga obrolan santai, topik ini menjadi pembahasan yang sangat menarik. Banyak orang mulai melirik mata uang kripto sebagai bentuk investasi, teknologi masa depan, maupun sistem keuangan alternatif.
 
 Tapi, kalian udah tau belum? Apa itu cryptocurrency dan apa bedanya sama uang yang sering kita pakai sehari-hari? Nah, buat kamu yang belum tau, kita bahas bareng-bareng yuk\!
