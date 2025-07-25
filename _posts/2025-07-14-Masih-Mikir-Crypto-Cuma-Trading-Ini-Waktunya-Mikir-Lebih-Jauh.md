@@ -1,19 +1,14 @@
 ---
-date: 2025-07-14
 layout: post
 title: Masih Mikir Crypto Cuma Trading? Ini Waktunya Mikir Lebih Jauh
-subtitle: 
-description: Masih mikir crypto cuma soal trading? Saatnya pahami lebih dalam potensi dan teknologi di balik dunia crypto yang terus berkembang.
+date: 2025-07-14
+author: Hadyan Orlenda
+categories: forum-opini
+tags: Crypto, Trading, Web3
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1752458549/1_ddgz1n.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1752458549/1_ddgz1n.png
-category: forum-opini
-tags:
-  - Crypto
-  - Trading
-  - Web3
-author: hadyanorlenda
-paginate: true
---- 
+description: Masih mikir crypto cuma soal trading? Saatnya pahami lebih dalam potensi dan teknologi di balik dunia crypto yang terus berkembang.
+---
 Saat mendengar kata crypto, kebanyakan orang langsung mikir soal trading, grafik naik-turun, dan harapan cuan instan. Padahal, dunia crypto jauh lebih luas dari sekadar jual-beli koin.
 
 Kalau kamu masih menganggap crypto cuma soal spekulasi harga, mungkin ini saatnya buka perspektif baru. Di balik volatilitas pasar, ada teknologi dan ekosistem yang lagi membentuk masa depan internet: Web3.
