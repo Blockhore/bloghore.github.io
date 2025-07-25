@@ -1,0 +1,56 @@
+.category-detail {
+  margin-top: 2rem;
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid $color-primary;
+    padding-left: 0.75rem;
+  }
+
+  .post-count {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1.5rem;
+
+    li {
+      background-color: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+      transition: box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
+
+      a {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          color: $color-primary;
+        }
+      }
+
+      .post-date {
+        display: block;
+        font-size: 0.9rem;
+        color: #999;
+        margin-top: 0.4rem;
+      }
+    }
+  }
+}
