@@ -1,16 +1,13 @@
 ---
-date: 2025-06-29 20:00:00
 layout: post
 title: Sejarah Blockchain
-subtitle: Sejarah blockchain mulai dari konsep hingga saat ini
-description: Buat kamu yang pengen tau sejarah blockchain seperti apa? Artikel ini cocok buat kamu baca
+date: 2025-06-29
+author: Rafi Aliffari
+categories: museum-crypto
+tags: Blockchain
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1751182801/1_zgmzc5.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1751182801/1_zgmzc5.png
-category: kelas-dasar
-tags:
-  - Blockchain
-author: rafialiffari
-paginate: true
+description: Buat kamu yang pengen tau sejarah blockchain seperti apa? Artikel ini cocok buat kamu baca.
 ---
 Di era digital, perkembangan teknologi itu gila banget. Salah satunya yang makin sering dibahas adalah teknologi *blockchain*. Penggunaan blockchain gak cuma seputar crypto aja bro, tapi juga merambah ke keuangan dan bisnis. Karena sistemnya yang terbuka dan aman, akhirnya banyak orang mulai meliriknya. 
 
