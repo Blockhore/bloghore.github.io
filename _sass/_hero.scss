@@ -9,17 +9,17 @@
   }
 }
 
-.hero-left .hero-main-post {
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  
   h1 {
   margin-bottom: 1rem;
   font-size: 2.2rem;
   border-left: 4px solid $color-primary;
   padding-left: 0.5rem;
   }
+
+.hero-left .hero-main-post {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 
   a {
     display: block;
