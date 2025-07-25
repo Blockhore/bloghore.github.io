@@ -1,6 +1,6 @@
 <div class="hero-container">
-  <h3 class="hero-label">Paling Populer</h3>
   <div class="hero-left">
+  <h3 class="hero-label">Paling Populer</h3>
     {% assign popular = site.posts | sort: 'views' | reverse %}
     {% assign top1 = popular.first %}
     <article class="hero-main-post">
