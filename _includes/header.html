@@ -3,15 +3,14 @@
     <div class="logo">
       <a href="{{ '/' | relative_url }}">
         <img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="Bloghore Logo" />
-        <span>Bloghore</span>
       </a>
     </div>
 
     <ul class="nav-links">
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/pages/category.html' | relative_url }}">Category</a></li>
-      <li><a href="{{ '/pages/archive.html' | relative_url }}">Archive</a></li>
-      <li><a href="{{ '/pages/about.html' | relative_url }}">About</a></li>
+      <li><a href="{{ '/' | relative_url }}">Beranda</a></li>
+      <li><a href="{{ '/pages/category.html' | relative_url }}">Kategori</a></li>
+      <li><a href="{{ '/pages/archive.html' | relative_url }}">Arsip</a></li>
+      <li><a href="{{ '/pages/about.html' | relative_url }}">Tentang</a></li>
     </ul>
 
     <label class="switch">
@@ -20,10 +19,12 @@
     </label>
 
     <div class="lang-switch">
-      <select id="lang-switch">
-        <option value="id" {% unless page.lang == "en" %}selected{% endunless %}>Indonesia</option>
-        <option value="en" {% if page.lang == "en" %}selected{% endif %}>English</option>
-      </select>
+      <form>
+        <select onchange="window.location.href=this.value">
+          <option value="https://bloghore.netlify.app/" {% if page.lang == 'id' %}selected{% endif %}>🇮🇩 Indonesia</option>
+          <option value="https://en.bloghore.netlify.app/" {% if page.lang == 'en' %}selected{% endif %}>🇬🇧 English</option>
+        </select>
+      </form>
     </div>
   </div>
 </header>
