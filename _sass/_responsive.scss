@@ -10,7 +10,15 @@
 
   .hero-section {
     .hero-main img {
-      max-height: 280px;
+      max-height: 260px;
+    }
+  
+    .hero-info h2 {
+      font-size: 1.25rem;
+    }
+  
+    .hero-list {
+      grid-template-columns: 1fr;
     }
   }
 
