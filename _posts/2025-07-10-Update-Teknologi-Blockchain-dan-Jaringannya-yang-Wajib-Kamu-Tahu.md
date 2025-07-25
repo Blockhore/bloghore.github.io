@@ -1,17 +1,14 @@
 ---
-date: 2025-07-10
 layout: post
 title: Uptade Teknologi Blockchain dan Jaringannya yang Wajib Kamu Tahu
-subtitle: 
-description: Update terbaru teknologi blockchain dan jaringan yang wajib kamu tahu untuk tetap relevan di era digital. Simak infonya di sini!
+date: 2025-07-10
+author: Rafi Aliffari
+categories: kelas-menengah
+tags: Blockchain
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1752132512/1_krxntl.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1752132512/1_krxntl.png
-category: kelas-menengah
-tags:
-  - Blockchain
-author: rafialiffari
-paginate: true
---- 
+description: Update terbaru teknologi blockchain dan jaringan yang wajib kamu tahu untuk tetap relevan di era digital. Simak infonya di sini!
+---
 Di era digital yang terus berkembang pesat, teknologi blockchain menjadi salah satu inovasi paling revolusioner yang mampu mengubah banyak sektor. Mulai dari keuangan, industri, hingga pemerintahan. Perkembangannya pun sering kali terjadi tanpa kita sadari, termasuk munculnya berbagai jaringan baru.
 
 Nah, di sini aku ingin mengajak kamu untuk lebih memahami pembaruan terkini dari dunia blockchain dan jaringannya. Apa saja teknologi baru yang sedang dikembangkan? Dan seperti apa keunggulan dari masing-masing jaringan blockchain? Yuk kita bahas bareng\!
