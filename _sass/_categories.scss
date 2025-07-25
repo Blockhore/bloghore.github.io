@@ -1,0 +1,42 @@
+.category-detail {
+  padding-block: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .category-description {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+
+  .category-count {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+
+      a {
+        color: #00aaff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      small {
+        color: #aaa;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
