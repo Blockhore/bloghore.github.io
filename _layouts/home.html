@@ -10,7 +10,7 @@ permalink: /
     {% assign top1 = popular.first %}
     <a href="{{ top1.url | relative_url }}">
       {% if top1.image %}
-      <span>Paling populer</span>
+      <h1>Paling populer</h1>
         <img src="{{ top1.image | relative_url }}" alt="{{ top1.title }}">
       {% endif %}
       <div class="hero-info">
@@ -26,6 +26,7 @@ permalink: /
       <div class="hero-item">
         <a href="{{ post.url | relative_url }}">
           {% if post.image %}
+          <h3>Paling banyak dibaca</h3>
             <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
           {% endif %}
           <div class="hero-item-info">
