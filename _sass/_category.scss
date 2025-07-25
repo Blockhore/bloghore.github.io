@@ -6,44 +6,38 @@
 }
 
 .category-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 12px;
   overflow: hidden;
-  background-color: #1a1a1a; // contoh dark bg
+  background-color: #111;
   color: #eee;
+  text-decoration: none; // penting, biar nggak underline semua
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  }
 
   img {
     width: 100%;
     height: 160px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-
-  &:hover img {
-    transform: scale(1.05);
   }
 
   div {
     padding: 1rem;
 
     h2 {
-      margin: 0 0 0.5rem 0;
-      font-size: 1.25rem;
-      color: #ffcc00;
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #ffd700;
     }
 
     p {
-      margin: 0 0 0.5rem 0;
-      line-height: 1.4;
-    }
-
-    a {
-      color: #00aaff;
-      text-decoration: underline;
-
-      &:hover {
-        color: #0088cc;
-      }
+      margin-bottom: 0.5rem;
     }
   }
 }
+
