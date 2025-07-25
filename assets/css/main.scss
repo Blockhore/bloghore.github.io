@@ -2,17 +2,22 @@
 ---
 
 // === IMPORT AT THE _sass FOLDER === //
+// 1. config & foundation (yg dipakai di file lain)
 @import "variables";
-@import "typography";
 @import "mixins";
+@import "reset";
+// 2. base styles
+@import "typography";
 @import "layout";
-@import "component";
 @import "theme";
 @import "dark";
-@import "footer";
+// 3. global components
 @import "navbar";
-@import "reset";
+@import "footer";
+@import "sidebar";
+// 4. page components & sections
 @import "home";
 @import "hero";
-@import "sidebar";
+@import "component";
+// 5. utilities & responsive
 @import "responsive";
