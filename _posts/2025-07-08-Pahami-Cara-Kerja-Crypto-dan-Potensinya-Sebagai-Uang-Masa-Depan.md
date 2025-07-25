@@ -1,17 +1,13 @@
 ---
-date: 2025-07-08
 layout: post
 title: Pahami Cara Kerja Crypto dan Potensinya Sebagai Mata Uang Masa Depan
-subtitle: 
-description: Pahami cara kerja crypto dan potensinya sebagai mata uang masa depan yang revolusioner di era digital. Temukan jawabannya di sini!
+date: 2025-07-08
+author: Rafi Aliffari
+categories: kelas-dasar
+tags: Cryptocurrency, Blockchain
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1751860265/1_ygd9qe.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1751860265/1_ygd9qe.png
-category: kelas-dasar
-tags:
-  - Cryptocurrency
-  - Blockchain
-author: rafialiffari
-paginate: true
+description: Pahami cara kerja crypto dan potensinya sebagai mata uang masa depan yang revolusioner di era digital. Temukan jawabannya di sini!
 ---
 Belakangan ini kata “crypto” sering banget seliweran di mana-mana, mulai dari sosial media, berita, sampai jadi bahan obrolan santai juga. Tapi sebenarnya, kamu sudah paham belum gimana cara kerja crypto dan kenapa banyak orang menyebutnya sebagai uang masa depan?
 
