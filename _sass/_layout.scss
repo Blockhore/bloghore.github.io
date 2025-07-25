@@ -138,7 +138,7 @@
       left: 0;
       right: 0;
       padding: 1.5rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
       color: white;
 
       h2 {
@@ -152,6 +152,7 @@
       }
 
       .post-meta {
+        display: block;
         margin-top: 0.5rem;
         font-size: 0.875rem;
         opacity: 0.85;
@@ -171,9 +172,9 @@
       border: 1px solid #e2e2e2;
 
       a {
-        display: block;
-        text-decoration: none;
         color: inherit;
+        text-decoration: none;
+        display: block;
       }
 
       img {
@@ -187,7 +188,7 @@
 
         h3 {
           font-size: 1rem;
-          margin-bottom: 0.25rem;
+          margin: 0 0 0.25rem;
         }
 
         .post-meta {
