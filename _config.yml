@@ -20,3 +20,8 @@ defaults:
       path: ""
     values:
       lang: id
+
+collections:
+  categories:
+    output: true
+    permalink: /categories/:path/
