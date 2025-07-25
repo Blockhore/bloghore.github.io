@@ -11,42 +11,47 @@
 
 .hero-left .hero-main-post {
   position: relative;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  background-color: #f2f2f2;
 
   a {
     display: block;
-    color: inherit;
+    position: relative;
+    color: white;
     text-decoration: none;
-  }
 
-  img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
-  }
-
-  .hero-main-info {
-    padding: 1.5rem;
-    background: white;
-
-    h2 {
-      margin: 0;
-      font-size: 1.75rem;
-      color: #111;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      display: block;
     }
 
-    p {
-      margin: 0.75rem 0;
-      font-size: 1rem;
-      color: #555;
-    }
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 1.5rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+      color: white;
 
-    .post-meta {
-      font-size: 0.85rem;
-      color: #888;
+      h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        color: #ddd;
+      }
+
+      .post-meta {
+        font-size: 0.85rem;
+        color: #ccc;
+      }
     }
   }
 }
