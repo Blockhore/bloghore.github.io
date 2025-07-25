@@ -5,26 +5,21 @@ title: Kategori
 
 <section class="category-page container">
   <h1>Daftar Kategori</h1>
-  <ul class="category-list">
-    {% assign categories = site.categories %}
-    {% for category in categories %}
-      <li>
-        <a href="{{ '/pages/category.html' | relative_url }}?category={{ category[0] | uri_escape }}">
-          {{ category[0] }} ({{ category[1].size }})
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
 
-  {% if page.url contains 'category=' %}
-    <h2>Artikel di kategori: {{ page.url | split: 'category=' | last | uri_unescape }}</h2>
-    <ul class="posts-list">
-      {% assign selected_category = page.url | split: 'category=' | last | uri_unescape %}
-      {% for post in site.categories[selected_category] %}
-        <li>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  <div class="category-grid">
+    {% for cat in site.categories %}
+      {% assign cat_slug = cat.title | slugify %}
+      {% assign total_posts = site.posts | where_exp: "post", "post.categories contains cat_slug" | size %}
+
+      <div class="category-card">
+        <img src="{{ cat.image | default: '/assets/images/default-category.jpg' }}" alt="{{ cat.title }}">
+        <div>
+          <h2>{{ cat.title }}</h2>
+          <p>{{ cat.description }}</p>
+          <p><strong>Total artikel:</strong> {{ total_posts }}</p>
+          <a href="{{ cat.url | relative_url }}">Lihat kategori</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </section>
