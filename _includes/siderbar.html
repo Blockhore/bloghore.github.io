@@ -1,0 +1,47 @@
+<aside class="post-sidebar">
+  <!-- Artikel Terkait -->
+  {% if page.categories %}
+    <div class="sidebar-section">
+      <h3>Artikel Terkait</h3>
+      <ul>
+        {% assign related_posts = site.posts | where_exp: "post", "post != page" %}
+        {% assign related = related_posts | where_exp: "post", "post.categories contains page.categories[0]" | slice: 0, 5 %}
+        {% for post in related %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <!-- Tag Artikel -->
+  {% if page.tags %}
+    <div class="sidebar-section">
+      <h3>Tag</h3>
+      <ul>
+        {% for tag in page.tags %}
+          <li>
+            <a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <!-- Share Button -->
+  <div class="sidebar-section">
+    <h3>Bagikan</h3>
+    <div class="share-buttons">
+      <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title }}" target="_blank">Twitter</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}" target="_blank">Facebook</a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- Join Komunitas -->
+  <div class="sidebar-section">
+    <h3>Gabung Komunitas</h3>
+    <a href="https://t.me/blockhore" target="_blank" class="btn-join">Join di Telegram</a>
+  </div>
+</aside>
