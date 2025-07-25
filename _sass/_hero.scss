@@ -9,13 +9,6 @@
   }
 }
 
-  h1 {
-  margin-bottom: 1rem;
-  font-size: 2.2rem;
-  border-left: 4px solid $color-primary;
-  padding-left: 0.5rem;
-  }
-
 .hero-left .hero-main-post {
   position: relative;
   border-radius: 10px;
@@ -58,6 +51,15 @@
       .post-meta {
         font-size: 0.85rem;
         color: #ccc;
+      }
+
+      .hero-label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $color-primary;
+        margin-bottom: 0.75rem;
+        padding-left: 0.25rem;
+        border-left: 4px solid $color-primary;
       }
     }
   }
