@@ -11,15 +11,14 @@ layout: default
     {% assign cat_name = cat.title | default: cat.slug | downcase %}
     {% assign total_posts = all_post_categories[cat_name] | size | default: 0 %}
 
-    <div class="category-card">
-      <img src="{{ cat.image }}" alt="{{ cat.title }}">
+    <a class="category-card" href="{{ cat.url | relative_url }}">
+      <img src="{{ cat.image | default: '/assets/images/default-category.jpg' }}" alt="{{ cat.title }}">
       <div>
         <h2>{{ cat.title }}</h2>
         <p>{{ cat.description }}</p>
         <p><strong>Total artikel:</strong> {{ total_posts }}</p>
-        <a href="{{ cat.url }}">Lihat kategori</a>
       </div>
-    </div>
+    </a>
   {% endfor %}
 </div>
 
