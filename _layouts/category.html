@@ -17,8 +17,14 @@ layout: default
     <ul class="post-list">
       {% for post in posts_in_category %}
         <li>
+          {% if post.thumbnail %}
+            <img src="{{ post.thumbnail }}" alt="{{ post.title }}" class="post-thumbnail">
+          {% endif %}
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           <small> – {{ post.date | date: "%d %b %Y" }}</small>
+          {% if post.excerpt %}
+            <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>
@@ -26,3 +32,4 @@ layout: default
     <p>Belum ada artikel dalam kategori ini.</p>
   {% endif %}
 </section>
+
