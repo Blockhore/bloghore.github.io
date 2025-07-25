@@ -1,17 +1,14 @@
 ---
-date: 2025-07-13
 layout: post
-title: Penasaran Apa Itu Web3? Ini Perbedaannya dengan Web1 dan Web2!
-subtitle: 
-description: Penasaran apa itu Web3? Cari tahu perbedaannya dengan Web1 dan Web2 dalam penjelasan singkat yang mudah dipahami!
+title: Penasaran Apa Itu Web3? Ini Perbedaannya dengan Web1 dan Web2
+date: 2025-07-13
+author: Rafi Aliffari
+categories: kelas-dasar
+tags: Web3
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1752387703/1_pzaj9a.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1752387703/1_pzaj9a.png
-category: kelas-dasar
-tags:
-  - Web3
-author: rafialiffari
-paginate: true
---- 
+description: Penasaran apa itu Web3? Cari tahu perbedaannya dengan Web1 dan Web2 dalam penjelasan singkat yang mudah dipahami!
+---
 Internet tuh makin kesini makin canggih. Dulu kita hanya bisa baca-baca doang di website, terus mulai bisa update status dan upload foto, dan sekarang kita sudah memasuki era baru yang katanya “desentralisasi” alias **Web3**. Tapi kamu udah tau belum apa itu Web3? Dan perbedaannya dengan Web1 dan Web2 sebelumnya?
 
 Nah, disini aku bakal bahas perbedaan dari ketiga generasi internet ini. Buat kamu yang masih bingung atau baru dengar soal Web3, tenang aja bakal kita kupas bareng-bareng disini. Yuk kita bahas\!
