@@ -5,38 +5,7 @@ permalink: /
 ---
 
 <section class="hero-section">
-  <div class="hero-main">
-    <h1>Paling populer</h1>
-    {% assign popular = site.posts | sort: 'views' | reverse %}
-    {% assign top1 = popular.first %}
-    <a href="{{ top1.url | relative_url }}">
-      {% if top1.image %}
-        <img src="{{ top1.image | relative_url }}" alt="{{ top1.title }}">
-      {% endif %}
-      <div class="hero-info">
-        <h2>{{ top1.title }}</h2>
-        <p>{{ top1.description | truncate: 100 }}</p>
-        <span class="post-meta">{{ top1.date | date: "%d %b %Y" }} • {{ top1.author }}</span>
-      </div>
-    </a>
-  </div>
-
-  <div class="hero-list">
-    <h3>Paling banyak dibaca</h3>
-    {% for post in popular offset:1 limit:5 %}
-      <div class="hero-item">
-        <a href="{{ post.url | relative_url }}">
-          {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}">
-          {% endif %}
-          <div class="hero-item-info">
-            <h3>{{ post.title }}</h3>
-            <span class="post-meta">{{ post.date | date: "%d %b %Y" }} • {{ post.author }}</span>
-          </div>
-        </a>
-      </div>
-    {% endfor %}
-  </div>
+  {% include hero.html %}
 </section>
 
 <section class="latest-articles">
