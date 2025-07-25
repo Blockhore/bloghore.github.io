@@ -1,18 +1,14 @@
 ---
-date: 2025-07-09
 layout: post
 title: Apakah Benar Bitcoin Termasuk Zero Sum Game?
-subtitle: 
-description: Benarkah Bitcoin termasuk zero sum game? Temukan jawabannya dan pahami konsep di baliknya dalam ulasan singkat ini!
+date: 2025-07-09
+author: Edo Putra
+categories: forum-opini
+tags: Bitcoin, Cryptocurrency
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1752023542/1_m2tl3e.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1752023542/1_m2tl3e.png
-category: forum opini
-tags:
-  - Bitcoin
-  - Cryptocurrency
-author: edoputra
-paginate: true
----  
+description: Benarkah Bitcoin termasuk zero sum game? Temukan jawabannya dan pahami konsep di baliknya dalam ulasan singkat ini!
+---
 Halo semuanya, lagi rame banget nih perihal Zero Sum Game yang dibahas sama salah satu influencer yang memiliki portofolio triliunan, tapi apakah benar Bitcoin itu sendiri termasuk salah satu contoh nyata dari Zero Sum Game itu sendiri ? Boleh ya kita bahas bareng di bawa biar tambah asik dan bisa ambil dari sudut pandang manapun.
 
 [Join komunitasnya untuk diskusi bareng\!](https://t.me/Blockhore)
