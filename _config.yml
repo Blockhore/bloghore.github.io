@@ -24,4 +24,4 @@ defaults:
 collections:
   categories:
     output: true
-    permalink: /categories/:path/
+    permalink: /category/:path/
