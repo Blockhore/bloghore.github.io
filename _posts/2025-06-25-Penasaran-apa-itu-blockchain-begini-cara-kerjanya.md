@@ -1,16 +1,13 @@
 ---
-date: 2025-06-25 19:21:00
 layout: post
 title: Blockchain dan Cara Kerjanya
-subtitle: Penasaran apa itu blockchain? Begini cara kerjanya!
-description: Buat kamu yang masih bingung apa itu blockchain dan gimana cara kerjanya? Artikel ini cocok buat kamu baca
+date: 2025-06-25
+author: Rafi Aliffari
+categories: kelas-dasar
+tags: Blockchain
+lang: id
 image: https://res.cloudinary.com/deq13ln4r/image/upload/v1750785379/1_pntka8.png
-optimized_image: https://res.cloudinary.com/deq13ln4r/image/upload/c_scale,w_380/v1750785379/1_pntka8.png
-category: kelas-dasar
-tags:
-  - Blockchain
-author: rafialiffari
-paginate: true
+description: Buat kamu yang masih bingung apa itu blockchain dan gimana cara kerjanya? Artikel ini cocok buat kamu baca.
 ---
 Di era digital saat ini yang semakin maju, pasti kamu sering mendengar istilah *blockchain*. Tapi, sebenarnya *blockchain* itu apa sih? Kenapa kok banyak orang beranggapan kalau teknologi ini bisa mengubah masa depan?
 
