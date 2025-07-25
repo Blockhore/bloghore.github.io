@@ -1,8 +1,8 @@
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+  gap: 2rem;
+  padding-block: 2rem;
 }
 
 .category-card {
@@ -12,7 +12,7 @@
   overflow: hidden;
   background-color: #111;
   color: #eee;
-  text-decoration: none; // penting, biar nggak underline semua
+  text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -40,4 +40,3 @@
     }
   }
 }
-
