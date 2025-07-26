@@ -10,3 +10,19 @@ if (langSelect) {
     }
   });
 }
+
+// === 5. LANGUANGE SELECT === 
+langSelect.addEventListener("change", function () {
+  const val = this.value;
+  const currentPath = window.location.pathname;
+
+  if (val === "en") {
+    if (!currentPath.startsWith("/en")) {
+      window.location.href = "/en/";
+    }
+  } else {
+    if (currentPath.startsWith("/en")) {
+      window.location.href = "/";
+    }
+  }
+});
