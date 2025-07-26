@@ -1,28 +1,28 @@
 ---
 layout: default
-title: Archive
+title: Arsip
 ---
 
 <section class="archive-page container">
   <h1>Arsip Artikel</h1>
 
-  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  <form id="date-filter-form" class="filter-form">
+    <label>Dari:
+      <input type="date" id="date-from">
+    </label>
+    <label>Sampai:
+      <input type="date" id="date-to">
+    </label>
+  </form>
 
-  {% for year_group in posts_by_year %}
-    <h2 class="archive-year">{{ year_group.name }}</h2>
-
-    {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%B'" %}
-
-    {% for month_group in posts_by_month %}
-      <h3 class="archive-month">{{ month_group.name }}</h3>
-      <ul class="archive-list">
-        {% for post in month_group.items %}
-          <li>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <small>{{ post.date | date: "%d %b %Y" }}</small>
-          </li>
-        {% endfor %}
-      </ul>
+  <div id="archive-list" class="archive-list">
+    {% for post in site.posts %}
+      <a href="{{ post.url | relative_url }}"
+         class="archive-card"
+         data-date="{{ post.date | date: '%Y-%m-%d' }}">
+        <h2>{{ post.title }}</h2>
+        <p class="post-date">{{ post.date | date: "%d %b %Y" }}</p>
+      </a>
     {% endfor %}
-  {% endfor %}
+  </div>
 </section>
