@@ -62,6 +62,48 @@ langSelect.addEventListener("change", function () {
   }
 });
 
+// === SEARCH INPUT ARTICKLE ===
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("search-input");
+  const results = document.getElementById("search-results");
+
+  if (!input || !results) return;
+
+  let posts = [];
+
+  fetch("/search.json")
+    .then(res => res.json())
+    .then(data => posts = data);
+
+  input.addEventListener("input", () => {
+    const keyword = input.value.toLowerCase();
+    results.innerHTML = "";
+
+    if (keyword.length < 2) return;
+
+    const filtered = posts.filter(post =>
+      post.title.toLowerCase().includes(keyword)
+    );
+
+    if (filtered.length === 0) {
+      results.innerHTML = "<li>Tidak ditemukan.</li>";
+      return;
+    }
+
+    filtered.forEach(post => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        <a href="${post.url}">
+          <strong>${post.title}</strong><br>
+          <small>${post.date}</small><br>
+          <span>${post.excerpt}</span>
+        </a>
+      `;
+      results.appendChild(li);
+    });
+  });
+});
+
 // === 6. DOCUMENT ARCHIVE SELECT ===
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".archive-card");
