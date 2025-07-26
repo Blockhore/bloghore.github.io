@@ -1,24 +1,29 @@
 ---
 layout: default
 title: Arsip
-permalink: /pages/archive.html
+permalink: /arsip/
 ---
 
 <section class="archive-page container">
-  <h1 class="section-title">Arsip Blog</h1>
+  <h1>Arsip Artikel</h1>
 
   {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
-  {% for year in posts_by_year %}
-    <div class="archive-group">
-      <h2>{{ year.name }}</h2>
-      <ul>
-        {% for post in year.items %}
+
+  {% for year_group in posts_by_year %}
+    <h2 class="archive-year">{{ year_group.name }}</h2>
+
+    {% assign posts_by_month = year_group.items | group_by_exp: "post", "post.date | date: '%B'" %}
+
+    {% for month_group in posts_by_month %}
+      <h3 class="archive-month">{{ month_group.name }}</h3>
+      <ul class="archive-list">
+        {% for post in month_group.items %}
           <li>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            <span class="post-date">{{ post.date | date: "%d %B" }}</span>
+            <small>{{ post.date | date: "%d %b %Y" }}</small>
           </li>
         {% endfor %}
       </ul>
-    </div>
+    {% endfor %}
   {% endfor %}
 </section>
