@@ -1,0 +1,45 @@
+.archive-page {
+  padding-block: 2rem;
+  color: #eee;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+  }
+
+  .archive-year {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #00aaff;
+  }
+
+  .archive-month {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #aaa;
+  }
+
+  .archive-list {
+    list-style: none;
+    padding-left: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+
+      a {
+        color: #ffcc66;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      small {
+        margin-left: 0.5rem;
+        color: #777;
+      }
+    }
+  }
+}
