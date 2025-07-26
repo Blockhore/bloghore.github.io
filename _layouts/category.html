@@ -14,22 +14,21 @@ layout: default
   {% if posts_in_category.size > 0 %}
     <p class="category-count">Total {{ posts_in_category.size }} artikel dalam kategori ini.</p>
 
-    <ul class="post-list">
+    <div class="post-grid">
       {% for post in posts_in_category %}
-        <li>
-          {% if post.image %}
-            <img src="{{ post.image }}" alt="{{ post.title }}" class="post-thumbnail">
-          {% endif %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          <small> – {{ post.date | date: "%d %b %Y" }}</small>
-          {% if post.excerpt %}
-            <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
-          {% endif %}
-        </li>
+        <a href="{{ post.url | relative_url }}" class="post-card">
+          <img src="{{ post.image | default: '/assets/images/default.jpg' }}" alt="{{ post.title }}">
+          <div class="card-content">
+            <h2>{{ post.title }}</h2>
+            <p class="post-date">{{ post.date | date: "%d %b %Y" }}</p>
+            {% if post.excerpt %}
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+            {% endif %}
+          </div>
+        </a>
       {% endfor %}
-    </ul>
+    </div>
   {% else %}
     <p>Belum ada artikel dalam kategori ini.</p>
   {% endif %}
 </section>
-
