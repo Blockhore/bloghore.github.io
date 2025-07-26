@@ -25,3 +25,6 @@ collections:
   categories:
     output: true
     permalink: /category/:path/
+
+include:
+  - pages
